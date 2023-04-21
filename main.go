@@ -39,7 +39,7 @@ func pingAccount(account string, key string, container string) error {
 	for pager.More() {
 		resp, err := pager.NextPage(context.TODO())
 		if err != nil {
-			return fmt.Errorf("azstorageping.pingAccount? error listing container contents: %w", err)
+			return fmt.Errorf("azstorageping.pingAccount: error listing container contents: %w", err)
 		}
 
 		for _, blob := range resp.Segment.BlobItems {
