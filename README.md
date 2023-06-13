@@ -1,6 +1,7 @@
 # azstorageping
 
 Connects to an azure storage account by access key and lists container contents.
+(fun little Go project in real life I would just use the Azure client)
 
 ## Quickstart
 
